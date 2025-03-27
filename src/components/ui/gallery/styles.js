@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Swiper } from "swiper/react";
 import Button from "/src/components/ui/button/button";
-import { ReactComponent as LeftArrow } from "/src/assets/left-arrow.svg";
+import  SvgComponent  from "../svg/svg-left-arrow";
 
 export const StyledSwiper = styled(Swiper)`
   width: 726px;
@@ -62,6 +62,6 @@ export const StyledButtonRight = styled(StyledButtonLeft)`
   left: auto;
 `;
 
-export const RightArrow = styled(LeftArrow)`
-  transform: rotate(180deg);
+export const RightArrow = styled(SvgComponent)`
+ transform: rotate(180deg);
 `;

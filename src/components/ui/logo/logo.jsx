@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as LogoImage } from "/src/assets/logo.svg";
+import SvgLogocmp from "../svg/svglogo";
 import { AppRoute } from "/src/const";
 import { Text, StyledLogo, StyledLogoMainPage } from "./styles";
 import { useLocation } from "react-router-dom";
@@ -9,12 +9,12 @@ function Logo() {
   const { pathname } = useLocation();
   return pathname === AppRoute.MAIN ? (
     <StyledLogoMainPage>
-      <LogoImage />
+     <SvgLogocmp />
       <Text>Котокафе</Text>
     </StyledLogoMainPage>
   ) : (
     <StyledLogo to={AppRoute.MAIN}>
-      <LogoImage />
+      <SvgLogocmp />
       <Text>Котокафе</Text>
     </StyledLogo>
   );

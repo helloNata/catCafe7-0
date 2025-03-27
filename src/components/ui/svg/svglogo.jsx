@@ -1,3 +1,7 @@
+import * as React from "react";
+
+function  SvgLogocmp (props){
+	return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={44}
@@ -14,3 +18,6 @@
       d="M12.897 32.771h-.016a.76.76 0 0 1-.743-.774c.084-4.188 4.536-10.605 9.862-10.605a.759.759 0 1 1 0 1.517c-4.427 0-8.273 5.6-8.345 9.119a.76.76 0 0 1-.758.743"
     />
   </svg>
+	);
+}
+export default SvgLogocmp;

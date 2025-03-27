@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as LeftArrow } from "/src/assets/left-arrow.svg";
+import  SvgComponent  from "../svg/svg-left-arrow";
 import { Li } from "/src/components/styled";
 
 export const StyledLi = styled(Li)`
@@ -39,8 +39,8 @@ export const Wrapper = styled.div`
   transition: height 0.2s ease-out;
 `;
 
-export const Arrow = styled(LeftArrow)`
-  transform: rotate(${(props) => (props.open ? "90deg" : "-90deg")}) scale(0.7);
+export const Arrow = styled(SvgComponent)`
+ transform: rotate(${(props) => (props.open ? "90deg" : "-90deg")}) scale(0.7);
   transition: transform 0.2s ease-out;
 `;
 

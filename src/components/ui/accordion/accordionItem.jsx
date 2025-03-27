@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Button, Arrow, ContentWrapper, TitleWrapper, Wrapper } from "./styles";
+import { Button,	Arrow,
+	ContentWrapper, TitleWrapper, Wrapper } from "./styles";
 
 // элемент аккордеона
 function AccordionItem({
